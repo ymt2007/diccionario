@@ -18,3 +18,9 @@ do
     Console.WriteLine("Desea ingresar otro producto? (s/n)");
     opcion = Console.ReadLine();
 } while (opcion != "n");
+Console.WriteLine("Productos registrados");
+Console.Clear();
+foreach(var pros in productos)
+{
+    Console.WriteLine(pros);
+}
