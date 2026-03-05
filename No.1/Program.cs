@@ -5,6 +5,15 @@ for(int i=0; i<=3;i++)
     int id=int.Parse(Console.ReadLine());
     Console.WriteLine("Ingrese el nombre de la persona");
     string nombreag=Console.ReadLine();
+    nombre.Add(id, nombreag);
 }
-Console.WriteLine("Datos guardados");
-
+Console.WriteLine("Ingrese el ID de la persona que desea buscar");
+int buscar=int.Parse(Console.ReadLine());
+if(nombre.ContainsKey(buscar))
+{
+    Console.WriteLine($"El ID {buscar} es de {nombre.ContainsKey(buscar)}");
+}
+else
+{
+    Console.WriteLine("No registrado");
+}
