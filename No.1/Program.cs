@@ -1,4 +1,5 @@
-﻿Dictionary<int, string> nombre = new Dictionary<int, string>();
+﻿using System.Collections.Generic;
+Dictionary<int, string> nombre = new Dictionary<int, string>();
 for(int i=1; i<=3;i++)
 {
     Console.WriteLine($"Ingrese el ID {i}");
