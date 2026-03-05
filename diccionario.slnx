@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="No.1/No.1.csproj" />
   <Project Path="No.3/No.3.csproj" Id="985699eb-47b8-41ee-9e22-7729495012b1" />
+  <Project Path="No.4/No.4.csproj" Id="eff430aa-03ea-4bdd-9282-93bd63830402" />
   <Project Path="numero2/numero2.csproj" />
 </Solution>
