@@ -1,5 +1,5 @@
 ﻿Dictionary<int, string> nombre = new Dictionary<int, string>();
-for(int i=0; i<=3;i++)
+for(int i=1; i<=3;i++)
 {
     Console.WriteLine("Ingrese el ID");
     int id=int.Parse(Console.ReadLine());
@@ -7,6 +7,7 @@ for(int i=0; i<=3;i++)
     string nombreag=Console.ReadLine();
     nombre.Add(id, nombreag);
 }
+Console.Clear();
 Console.WriteLine("Ingrese el ID de la persona que desea buscar");
 int buscar=int.Parse(Console.ReadLine());
 if(nombre.ContainsKey(buscar))
