@@ -9,3 +9,9 @@ foreach(var ciu in ciudades)
 {
     Console.Write($"{ciu.Key}, ");
 }
+Console.WriteLine();
+foreach(var ciu in ciudades)
+{
+    Console.Write($"{ciu.Value}, ");
+
+}
