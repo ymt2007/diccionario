@@ -24,5 +24,18 @@ do
                 op1=Console.ReadLine();
             } while (op1!="n");
             break;
+            case 2:
+            string op2;
+            do
+            {
+                Console.WriteLine("Ingrese el nombre del estudiante del cual desea modificar las notas");
+                string notamod = Console.ReadLine();
+                Console.WriteLine("Ingrese la nueva nota");
+                double notanueva= double.Parse(Console.ReadLine());
+                notas[notamod] = notanueva;
+                Console.WriteLine("Desea modificar la nota de otro estudiante? (s/n)");
+                op2 = Console.ReadLine();
+            } while (op2 != "n");
+            break;
     }
 } while (opcion!=4);
