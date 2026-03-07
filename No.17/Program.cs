@@ -23,6 +23,7 @@ do
                 Console.WriteLine("Desea ingresar otro producto? (s/n)");
                 opcion = Console.ReadLine();
             } while (opcion != "n");
+            Console.Clear();
             break;
             case 2:
             Console.WriteLine("Ingrese el codigo del producto que dese eliminar");
@@ -36,7 +37,19 @@ do
             {
                 Console.WriteLine("El codigo del producto que ingreso no se ha registrado");
             }
+            Console.Clear() ;
             break;
-            
+        case 3:
+            foreach(var pros in productos)
+            {
+                Console.WriteLine(pros);
+            }
+            break;
+        case 4:
+            Console.WriteLine("Saliendo...");
+            break;
+        default:
+            Console.WriteLine("Opcion invalida");
+            break;
     }
 } while (op!=4);
