@@ -9,5 +9,20 @@ do
     Console.WriteLine("3. mostrar productos registrados");
     Console.WriteLine("4. Salir");
     op=int.Parse(Console.ReadLine());
-
+    switch (op)
+    {
+        case 1:
+            string opcion;
+            do
+            {
+                Console.WriteLine("Ingrese el codigo del producto");
+                int codigo = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese el producto");
+                string productoing = Console.ReadLine();
+                productos.Add(codigo, productoing);
+                Console.WriteLine("Desea ingresar otro producto? (s/n)");
+                opcion = Console.ReadLine();
+            } while (opcion != "n");
+            break;
+    }
 } while (op!=4);
