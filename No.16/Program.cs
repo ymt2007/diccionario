@@ -30,6 +30,11 @@ do
                 Console.WriteLine(est);
             }
             break;
-            
+            case 3:
+            Console.WriteLine("Saliendo...");
+            break;
+        default:
+            Console.WriteLine("Error, opcion invalida");
+            break;
     }
 } while (opcion != 3);
