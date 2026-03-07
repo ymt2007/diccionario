@@ -9,5 +9,20 @@ do
     Console.WriteLine("3. Mostrar notas");
     Console.WriteLine("4. Salir");
     opcion = int.Parse(Console.ReadLine());
-
-} while ();
+    string op1;
+    switch(opcion)
+    {
+        case 1:
+            do
+            {
+                Console.WriteLine("Ingrese el nombre del estudiante");
+                string nombre = Console.ReadLine();
+                Console.WriteLine("Ingrese la nota del estudiante");
+                double notaing = double.Parse(Console.ReadLine());
+                notas.Add(nombre, notaing);
+                Console.WriteLine("Desea registrar la nota de otro estudiante (s/n)");
+                op1=Console.ReadLine();
+            } while (op1!="n");
+            break;
+    }
+} while (opcion!=4);
