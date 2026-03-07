@@ -19,10 +19,12 @@ do
                 string nombre = Console.ReadLine();
                 Console.WriteLine("Ingrese la nota del estudiante");
                 double notaing = double.Parse(Console.ReadLine());
+                Console.WriteLine("Nota registrada correctamente");
                 notas.Add(nombre, notaing);
                 Console.WriteLine("Desea registrar la nota de otro estudiante (s/n)");
                 op1=Console.ReadLine();
             } while (op1!="n");
+            Console.Clear();
             break;
             case 2:
             string op2;
@@ -33,9 +35,24 @@ do
                 Console.WriteLine("Ingrese la nueva nota");
                 double notanueva= double.Parse(Console.ReadLine());
                 notas[notamod] = notanueva;
+                Console.WriteLine("Nota actualizada correctamente");
                 Console.WriteLine("Desea modificar la nota de otro estudiante? (s/n)");
                 op2 = Console.ReadLine();
             } while (op2 != "n");
+            Console.Clear();
+            break;
+        case 3:
+            Console.WriteLine("Notas registrada:");
+            foreach(var not in notas)
+            {
+                Console.WriteLine(not);
+            }
+            break;
+            case 4:
+            Console.WriteLine("Saliendo...");
+            break;
+        default:
+            Console.WriteLine("Error, opcion invalida");
             break;
     }
 } while (opcion!=4);
